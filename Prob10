@@ -1,0 +1,21 @@
+import java.util.*;
+public class lemonade {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		
+		System.out.println("Enter the number of tickets cups you would like");
+		int tickets = scan.nextInt();
+		double price = 1.25;
+		double totalPrice = price*tickets;
+		
+		if (tickets>0){
+			System.out.printf("You owe me $%.2f",totalPrice);
+		}else{
+			System.out.println("That is not a valid number of cups");
+		}
+
+	}
+
+}
