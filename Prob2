@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class problemTwo {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int runs = scan.nextInt();
+		scan.nextLine();
+		for(int i = 0; i<runs;i++){
+			String line = scan.next();
+			int sub = scan.nextInt();
+			line = line.substring(0,sub) + line.substring((sub+1));
+			System.out.println(line);
+		}
+
+	}
+
+}
