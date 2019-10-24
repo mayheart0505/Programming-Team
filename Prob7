@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class fractals {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int runs = scan.nextInt();
+		for(int i = 0; i<runs; i++){
+			int a = scan.nextInt();
+			int b = scan.nextInt();
+			double t = Math.sqrt(a+b);
+			if (t!=t){
+				System.out.println("Fraction #" + (i+1) +": "+"DNE");
+			}else{
+				System.out.printf("Fraction #" + (i+1) +": %.2f\n", t);
+			}
+
+		}
+
+	}
+
+}
